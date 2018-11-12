@@ -333,7 +333,12 @@ nav .menu {
   font-size: 16px;
   font-weight: 400;
   color: #111;
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.porjectlink {
+  padding-bottom: 40px;
+  padding-top: 20px;
 }
 
 .porjectlink a{
@@ -352,6 +357,10 @@ nav .menu {
   font-weight: 500;
 }
 
+
+
+
+
 @media only screen and (min-width: 768px) {
   .text-project {
     font-size: 13px;
@@ -362,9 +371,6 @@ nav .menu {
     font-size: 16px;
   }
 
-  .link-text:hover {
-    font-size: 18px;
-  }
 
   .normal-text {
     font-size: 16px;
@@ -561,7 +567,7 @@ img {
 
 #wrapper {
   padding-top: 150px;
-  width: 100%;
+  width: 80%;
   height: 80%;
   overflow: hidden;
   max-width: 650px;
