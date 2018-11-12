@@ -330,10 +330,10 @@ nav .menu {
 
 .link-text:hover {
   font-family: Roboto, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: #111;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .porjectlink {
@@ -371,6 +371,9 @@ nav .menu {
     font-size: 16px;
   }
 
+  .link-text:hover {
+    font-size: 17px;
+  }
 
   .normal-text {
     font-size: 16px;
