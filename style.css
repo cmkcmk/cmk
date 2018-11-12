@@ -1,0 +1,642 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* my codes starts here */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: crosshair;
+}
+
+html, body {
+  height: 100%;
+  cursor: crosshair;
+}
+
+a {
+  cursor: none;
+}
+
+main {
+  height: 100%;
+}
+/* navigation bar*/
+
+nav {
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  height: 90px;
+}
+
+nav .logo {
+  padding: 20px 0 20px 8%;
+}
+
+nav .menu {
+  display: flex;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 8%;
+  padding-right: 12%;
+}
+
+nav .header-brand {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  text-shadow: 1px 1px 1px gray;
+}
+
+.header-brand :hover {
+  font-size: 17px;
+}
+
+nav a {
+  font-family: Roboto, sans-serif;
+  font-size: 11px;
+  font-weight: 200;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.menu :hover {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+nav .name {
+  display: none;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 800px) {
+  nav {
+    height: 80px;
+    display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  }
+
+nav .logo {
+  display: flex;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  align-items: center;
+  padding: 20px 0 20px 5%;
+}
+
+nav .menu, nav .logo {
+    width: 50%;
+  }
+
+nav .menu {
+  padding-left: 10%;
+  padding-right: 5%;
+}
+
+
+.menu :hover{
+  font-size: 13px;
+}
+
+  nav .header-brand {
+    display: none;
+  }
+
+  nav .name {
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #111;
+    display: block;
+    text-align: left;
+    float: left;
+    text-transform: uppercase;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  nav a:hover {
+    font-size: 23px;
+  }
+
+}
+
+/* text  und link stile*/
+
+.button  {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: none;
+}
+
+.normal-text {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111;
+  line-height: 24px;
+  padding-bottom: 25px;
+}
+
+#Forschungsfrage {
+  font-size: 15px;
+  font-weight: 200;
+  color: #111;
+  line-height: 24px;
+  padding-bottom: 25px;
+}
+
+.text-project {
+  font-family: Roboto, sans-serif;
+  font-size: 11px;
+  font-weight: 200;
+  color: #111;
+  line-height: 20px;
+  width: 90%;
+  padding-bottom: 25px;
+}
+
+.weiter {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  font-style: italic;
+  color: #111;
+}
+
+.weiter:hover {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  color: #111;
+  text-decoration: underline;
+}
+
+.zumpdf {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  color: #111;
+  text-decoration: underline;
+}
+
+.zumpdf:hover {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #111;
+  text-decoration: none;
+}
+
+.link-text {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111;
+  text-decoration: underline;
+}
+
+.link-text:hover {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #111;
+  text-decoration: underline;
+}
+
+.porjectlink a{
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  text-decoration: underline;
+  padding-bottom: 22px;
+  padding-top: 15px;
+}
+
+.porjectlink a:hover {
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) {
+  .text-project {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .link-text {
+    font-size: 16px;
+  }
+
+  .link-text:hover {
+    font-size: 18px;
+  }
+
+  .normal-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  #Forschungsfrage {
+    font-size: 18px;
+    font-weight: 200;
+    color: #111;
+    line-height: 28px;
+    padding-bottom: 25px;
+  }
+
+  .weiter {
+    font-size: 16px;
+  }
+  .zumpdf {
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  .zumpdf:hover {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+.porjectlink a{
+  font-size: 24px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.porjectlink a:hover{
+  font-size: 26px;
+}
+}
+
+
+
+/* project pages*/
+
+.wrapper-pr {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-left: 40px;
+  padding-right: 30px;
+}
+
+h1 {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #111;
+  line-height: 28px;
+  padding-bottom: 30px;
+}
+
+h2 {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 26px;
+  color: #111;
+  width: 90%;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  line-height: 20px;
+}
+
+h3 {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  color: #111;
+  width: 90%;
+  text-decoration: underline;
+  padding-bottom: 5px;
+  padding-top: 15px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 6px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .wrapper-pr {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+
+h1 {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  padding-bottom: 40px;
+}
+
+h2 {
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
+  padding-bottom: 20px;
+  padding-top: 15px;
+  line-height: 28px;
+}
+
+h3 {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  width: 90%;
+  text-decoration: underline;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+img {
+  padding-bottom: 8px;
+}
+}
+
+
+@media only screen and (min-width: 768px) {
+
+
+  }
+  .text-project {
+    text-align: justify;
+}
+
+/* kontakt page*/
+
+.kontakt {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #111;
+  line-height: 24px;
+  margin: 0 auto;
+  font-style: italic;
+  }
+
+.kontakt a {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #111;
+  line-height: 24px;
+  text-decoration: underline;
+  }
+
+#none {
+    text-decoration: none;
+    }
+
+
+
+.kontakt a:hover {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    text-decoration: none;
+    color: #111;
+  }
+
+  @media only screen and (min-width: 768px) {
+
+
+    .kontakt a {
+      font-size: 18px;
+      line-height: 28px;
+      }
+
+    .kontakt a:hover {
+        font-size: 20px;
+      }
+  }
+
+
+@media only screen and (min-width: 1024px) {
+
+  .wrapper-port {
+   padding-top: 200px;
+  }
+}
+
+/* slider frontpage */
+
+/*@keyframes slider {
+  0% {left: 0;}
+  15% {left: 0;}
+  20% {left: -100%;}
+  28% {left: -100%;}
+  35% {left: -200%;}
+  45% {left: -200%;}
+  50% {left: -300%;}
+  65% {left: -300%;}
+  75% {left: -400%;}
+  80% {left: -400%;}
+  95% {left: -500%;}
+  100% {left: -500%;}
+}/*
+
+/*.wrapper-slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  /*display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  /*display: -ms-flexbox;      /* TWEENER - IE 10 */
+  /*display: -webkit-flex;     /* NEW - Chrome */
+  /*display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+/*  justify-content: center;
+  align-items: center;
+}*/
+
+/*#slider {
+  overflow: hidden;
+  width: 80%;
+  max-width: 780px;
+  position: relative;
+}*/
+
+
+
+
+/* pdf */
+
+.container {
+  padding:80px 10% 0 10%;
+  margin: 0 auto;
+}
+
+
+.container-plakat {
+  padding:80px 1% 0 1%;
+  margin: 0 auto;}
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding:0 30% 0 30%;
+    margin: 0 auto;}
+
+  }
+
+/* slik slider */
+
+#wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+#wrapper img{
+  width: 100%;
+}
+
+#wrapper div img:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+
+
+  }
